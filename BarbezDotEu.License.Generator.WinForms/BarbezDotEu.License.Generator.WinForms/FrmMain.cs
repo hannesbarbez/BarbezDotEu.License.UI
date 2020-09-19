@@ -1,4 +1,6 @@
-﻿using BarbezDotEu.License.Generation;
+﻿// Copyright (c) Hannes Barbez. All rights reserved.
+
+using BarbezDotEu.License.Generation;
 using System;
 using System.Windows.Forms;
 

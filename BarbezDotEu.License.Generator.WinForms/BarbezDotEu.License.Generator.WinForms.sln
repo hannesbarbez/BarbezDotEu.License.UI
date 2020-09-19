@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbezDotEu.License.Generat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbezDotEu.License.Generation", "..\..\BarbezDotEu.License\BarbezDotEu.License\BarbezDotEu.License.Generation\BarbezDotEu.License.Generation.csproj", "{066A482D-B608-4091-B35D-058141F3A68C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DBCC6EEE-695F-4A0E-B87A-B1B5F1F9AAAB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
