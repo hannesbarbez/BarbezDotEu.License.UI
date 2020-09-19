@@ -13,4 +13,8 @@
     <PackageProjectUrl>https://www.barbez.eu</PackageProjectUrl>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BarbezDotEu.License\BarbezDotEu.License\BarbezDotEu.License.Generation\BarbezDotEu.License.Generation.csproj" />
+  </ItemGroup>
+
 </Project>
