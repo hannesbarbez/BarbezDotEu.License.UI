@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Version>2.0.0</Version>
+    <Authors>Hannes Barbez</Authors>
+    <Company>Hannes Barbez</Company>
+    <Product>Barbez.eu License Key Generator</Product>
+    <Description>Barbez.eu License Key Generator</Description>
+    <Copyright>©2020 Barbez.eu</Copyright>
+    <PackageProjectUrl>https://www.barbez.eu</PackageProjectUrl>
+  </PropertyGroup>
+
+</Project>

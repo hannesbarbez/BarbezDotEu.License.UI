@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbezDotEu.License.Generator.WinForms", "BarbezDotEu.License.Generator.WinForms\BarbezDotEu.License.Generator.WinForms.csproj", "{19C93D35-4DD9-4C8E-A80B-17B1413E587F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19C93D35-4DD9-4C8E-A80B-17B1413E587F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C93D35-4DD9-4C8E-A80B-17B1413E587F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C93D35-4DD9-4C8E-A80B-17B1413E587F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C93D35-4DD9-4C8E-A80B-17B1413E587F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47C09DB3-0B36-436D-905B-BC473B4CED65}
+	EndGlobalSection
+EndGlobal
