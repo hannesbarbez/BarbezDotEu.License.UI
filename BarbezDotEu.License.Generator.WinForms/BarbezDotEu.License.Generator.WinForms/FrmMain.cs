@@ -83,33 +83,19 @@ namespace BarbezDotEu.License.Generator.WinForms
         {
             excluded = new HashSet<string>(excludedKeys.Where(x => !string.IsNullOrWhiteSpace(x)).Select(x => x.Trim()));
             keys = new ConcurrentBag<string>();
-            var tasks = CreateTasks();
-            for (int i = default; i < numberOfKeys; i++) tasks[i] = new Task(async () => await AddKeyToKeys());
-            Parallel.ForEach(tasks, task => task.Start());
-            await Task.WhenAll(tasks);
-            return keys;
-        }
-
-        private Task[] CreateTasks()
-        {
-            ConcurrentBag<Task> tasks = new ConcurrentBag<Task>();
-            Parallel.For(default, numberOfKeys, x =>
+            return await Task.Run(() =>
             {
-                tasks.Add(new Task(async () => await AddKeyToKeys()));
+                Parallel.For(default, numberOfKeys, x =>
+                {
+                    var key = this.GenerateKey();
+                    if (!keys.Contains(key) && !excluded.Contains(key))
+                    {
+                        keys.Add(key);
+                    }
+                });
+
+                return keys;
             });
-
-            return tasks.ToArray();
-        }
-
-        private Task AddKeyToKeys()
-        {
-            var key = this.GenerateKey();
-            if (!keys.Contains(key) && !excluded.Contains(key))
-            {
-                keys.Add(key);
-            }
-
-            return Task.CompletedTask;
         }
 
         private string GenerateKey()

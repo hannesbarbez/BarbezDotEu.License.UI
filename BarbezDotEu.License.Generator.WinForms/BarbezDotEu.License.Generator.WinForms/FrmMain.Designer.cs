@@ -142,7 +142,7 @@
             this.tbDoNotInclude.Multiline = true;
             this.tbDoNotInclude.Name = "tbDoNotInclude";
             this.tbDoNotInclude.PlaceholderText = "Type or paste any license keys to exclude from the list of generated license keys" +
-    ".";
+    " (one per line).";
             this.tbDoNotInclude.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbDoNotInclude.Size = new System.Drawing.Size(571, 73);
             this.tbDoNotInclude.TabIndex = 7;
