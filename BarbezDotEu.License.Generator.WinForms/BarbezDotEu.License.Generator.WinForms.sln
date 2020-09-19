@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbezDotEu.License.Generator.WinForms", "BarbezDotEu.License.Generator.WinForms\BarbezDotEu.License.Generator.WinForms.csproj", "{19C93D35-4DD9-4C8E-A80B-17B1413E587F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbezDotEu.License.Generator.WinForms", "BarbezDotEu.License.Generator.WinForms\BarbezDotEu.License.Generator.WinForms.csproj", "{19C93D35-4DD9-4C8E-A80B-17B1413E587F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbezDotEu.License.Generation", "..\..\BarbezDotEu.License\BarbezDotEu.License\BarbezDotEu.License.Generation\BarbezDotEu.License.Generation.csproj", "{066A482D-B608-4091-B35D-058141F3A68C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{19C93D35-4DD9-4C8E-A80B-17B1413E587F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19C93D35-4DD9-4C8E-A80B-17B1413E587F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19C93D35-4DD9-4C8E-A80B-17B1413E587F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066A482D-B608-4091-B35D-058141F3A68C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066A482D-B608-4091-B35D-058141F3A68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066A482D-B608-4091-B35D-058141F3A68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066A482D-B608-4091-B35D-058141F3A68C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
