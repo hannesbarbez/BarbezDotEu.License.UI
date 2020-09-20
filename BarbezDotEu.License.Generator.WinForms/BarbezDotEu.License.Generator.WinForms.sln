@@ -12,6 +12,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbezDotEu.License.Verification", "..\..\BarbezDotEu.License\BarbezDotEu.License\BarbezDotEu.License.Verification\BarbezDotEu.License.Verification.csproj", "{01B147A6-EF24-42D9-8328-D2859146BB7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{F6B4C005-161B-4655-8964-D6E96E29B04C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbezDotEu.License.Shared", "..\..\BarbezDotEu.License\BarbezDotEu.License\BarbezDotEu.License.Shared\BarbezDotEu.License.Shared.csproj", "{C4A3CA07-8CEA-4A54-88B0-83B2A13D91C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +32,22 @@ Global
 		{066A482D-B608-4091-B35D-058141F3A68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{066A482D-B608-4091-B35D-058141F3A68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{066A482D-B608-4091-B35D-058141F3A68C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B147A6-EF24-42D9-8328-D2859146BB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B147A6-EF24-42D9-8328-D2859146BB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B147A6-EF24-42D9-8328-D2859146BB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B147A6-EF24-42D9-8328-D2859146BB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A3CA07-8CEA-4A54-88B0-83B2A13D91C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A3CA07-8CEA-4A54-88B0-83B2A13D91C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A3CA07-8CEA-4A54-88B0-83B2A13D91C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A3CA07-8CEA-4A54-88B0-83B2A13D91C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{066A482D-B608-4091-B35D-058141F3A68C} = {F6B4C005-161B-4655-8964-D6E96E29B04C}
+		{01B147A6-EF24-42D9-8328-D2859146BB7A} = {F6B4C005-161B-4655-8964-D6E96E29B04C}
+		{C4A3CA07-8CEA-4A54-88B0-83B2A13D91C4} = {F6B4C005-161B-4655-8964-D6E96E29B04C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47C09DB3-0B36-436D-905B-BC473B4CED65}

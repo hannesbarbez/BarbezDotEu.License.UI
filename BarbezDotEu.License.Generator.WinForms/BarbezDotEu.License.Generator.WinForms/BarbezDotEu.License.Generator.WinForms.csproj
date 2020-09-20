@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\BarbezDotEu.License\BarbezDotEu.License\BarbezDotEu.License.Generation\BarbezDotEu.License.Generation.csproj" />
+    <ProjectReference Include="..\..\..\BarbezDotEu.License\BarbezDotEu.License\BarbezDotEu.License.Verification\BarbezDotEu.License.Verification.csproj" />
   </ItemGroup>
 
 </Project>

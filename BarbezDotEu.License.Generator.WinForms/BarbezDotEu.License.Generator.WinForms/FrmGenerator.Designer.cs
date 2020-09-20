@@ -1,6 +1,6 @@
 ﻿namespace BarbezDotEu.License.Generator.WinForms
 {
-    partial class FrmMain
+    partial class FrmGenerator
     {
         /// <summary>
         ///  Required designer variable.
@@ -41,6 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tbSerials = new System.Windows.Forms.TextBox();
             this.pbProgress = new System.Windows.Forms.ProgressBar();
+            this.BtnTest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -66,9 +67,9 @@
             this.btnGenerateSerials.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGenerateSerials.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnGenerateSerials.Enabled = false;
-            this.btnGenerateSerials.Location = new System.Drawing.Point(458, 12);
+            this.btnGenerateSerials.Location = new System.Drawing.Point(457, 12);
             this.btnGenerateSerials.Name = "btnGenerateSerials";
-            this.btnGenerateSerials.Size = new System.Drawing.Size(125, 37);
+            this.btnGenerateSerials.Size = new System.Drawing.Size(127, 37);
             this.btnGenerateSerials.TabIndex = 2;
             this.btnGenerateSerials.Text = "&Generate keys";
             this.btnGenerateSerials.UseVisualStyleBackColor = true;
@@ -85,6 +86,7 @@
             this.rbScreenshotOne.TabStop = true;
             this.rbScreenshotOne.Text = "&Screenshot One Pro";
             this.rbScreenshotOne.UseVisualStyleBackColor = true;
+            this.rbScreenshotOne.CheckedChanged += new System.EventHandler(this.rbScreenshotOne_CheckedChanged);
             // 
             // rbEisat
             // 
@@ -95,6 +97,7 @@
             this.rbEisat.TabIndex = 4;
             this.rbEisat.Text = "&Experience Index System Assessment Tool";
             this.rbEisat.UseVisualStyleBackColor = true;
+            this.rbEisat.CheckedChanged += new System.EventHandler(this.rbEisat_CheckedChanged);
             // 
             // rbVocabulary
             // 
@@ -105,6 +108,7 @@
             this.rbVocabulary.TabIndex = 5;
             this.rbVocabulary.Text = "&Vocabulary++";
             this.rbVocabulary.UseVisualStyleBackColor = true;
+            this.rbVocabulary.CheckedChanged += new System.EventHandler(this.rbVocabulary_CheckedChanged);
             // 
             // rbShutdown
             // 
@@ -115,6 +119,7 @@
             this.rbShutdown.TabIndex = 6;
             this.rbShutdown.Text = "S&hutdown";
             this.rbShutdown.UseVisualStyleBackColor = true;
+            this.rbShutdown.CheckedChanged += new System.EventHandler(this.rbShutdown_CheckedChanged);
             // 
             // tbNumberOfSerials
             // 
@@ -168,7 +173,7 @@
             this.tbSerials.PlaceholderText = "Your generated license keys will appear here.";
             this.tbSerials.ReadOnly = true;
             this.tbSerials.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbSerials.Size = new System.Drawing.Size(571, 208);
+            this.tbSerials.Size = new System.Drawing.Size(571, 188);
             this.tbSerials.TabIndex = 8;
             // 
             // pbProgress
@@ -180,12 +185,25 @@
             this.pbProgress.TabIndex = 11;
             this.pbProgress.Visible = false;
             // 
-            // FrmMain
+            // BtnTest
+            // 
+            this.BtnTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnTest.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.BtnTest.Location = new System.Drawing.Point(459, 424);
+            this.BtnTest.Name = "BtnTest";
+            this.BtnTest.Size = new System.Drawing.Size(125, 37);
+            this.BtnTest.TabIndex = 2;
+            this.BtnTest.Text = "&Test a key";
+            this.BtnTest.UseVisualStyleBackColor = true;
+            this.BtnTest.Click += new System.EventHandler(this.BtnTest_Click);
+            // 
+            // FrmGenerator
             // 
             this.AcceptButton = this.btnGenerateSerials;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(595, 450);
+            this.ClientSize = new System.Drawing.Size(595, 473);
+            this.Controls.Add(this.BtnTest);
             this.Controls.Add(this.pbProgress);
             this.Controls.Add(this.tbSerials);
             this.Controls.Add(this.label4);
@@ -199,7 +217,7 @@
             this.Controls.Add(this.btnGenerateSerials);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FrmMain";
+            this.Name = "FrmGenerator";
             this.Text = "Barbez.eu License Key Generator";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -221,6 +239,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbSerials;
         private System.Windows.Forms.ProgressBar pbProgress;
+        private System.Windows.Forms.Button BtnTest;
     }
 }
 

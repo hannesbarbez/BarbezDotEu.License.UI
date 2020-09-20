@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace BarbezDotEu.License.Generator.WinForms
 {
-    public partial class FrmMain : Form
+    public partial class FrmGenerator : Form
     {
         // 100000 = Still kind of acceptable before WinForms UI starts to give in.
         private const uint MAXKEYS = 100000;
@@ -18,9 +18,11 @@ namespace BarbezDotEu.License.Generator.WinForms
         private static uint numberOfKeys;
         private static int resultingsum;
 
-        public FrmMain()
+        public FrmGenerator()
         {
             InitializeComponent();
+            rbScreenshotOne.Checked = true;
+            SetResultingSum();
             tbNumberOfSerials.PlaceholderText = $"max. {MAXKEYS}";
         }
 
@@ -32,7 +34,6 @@ namespace BarbezDotEu.License.Generator.WinForms
         private async void BtnGenerateSerialNumber_Click(object sender, EventArgs e)
         {
             this.PrepareUiForNewKeys();
-            this.SetResultingSum();
             var keyGenerator = new KeyGenerator(resultingsum, DIVIDER);
             var generatedKeys = await keyGenerator.GenerateKeys(numberOfKeys, tbDoNotInclude.Lines);
             this.PrepareUiWithNewKeys(generatedKeys);
@@ -71,6 +72,7 @@ namespace BarbezDotEu.License.Generator.WinForms
             rbScreenshotOne.Enabled = state;
             rbShutdown.Enabled = state;
             rbVocabulary.Enabled = state;
+            BtnTest.Enabled = state;
             pbProgress.Visible = !state;
             if (pbProgress.Visible)
                 tbSerials.Clear();
@@ -88,6 +90,32 @@ namespace BarbezDotEu.License.Generator.WinForms
             {
                 btnGenerateSerials.Enabled = false;
             }
+        }
+
+        private void BtnTest_Click(object sender, EventArgs e)
+        {
+            var validator = new FrmValidator(resultingsum);
+            validator.ShowDialog();
+        }
+
+        private void rbScreenshotOne_CheckedChanged(object sender, EventArgs e)
+        {
+            SetResultingSum();
+        }
+
+        private void rbEisat_CheckedChanged(object sender, EventArgs e)
+        {
+            SetResultingSum();
+        }
+
+        private void rbVocabulary_CheckedChanged(object sender, EventArgs e)
+        {
+            SetResultingSum();
+        }
+
+        private void rbShutdown_CheckedChanged(object sender, EventArgs e)
+        {
+            SetResultingSum();
         }
     }
 }
