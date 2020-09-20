@@ -35,7 +35,7 @@ namespace BarbezDotEu.License.Generator.WinForms
             this.SetResultingSum();
             var keyGenerator = new KeyGenerator(resultingsum, DIVIDER);
             var generatedKeys = await keyGenerator.GenerateKeys(numberOfKeys, tbDoNotInclude.Lines);
-            this.PrepareUiWithNewKeys(generatedKeys.ToArray());
+            this.PrepareUiWithNewKeys(generatedKeys);
         }
 
         private void SetResultingSum()
