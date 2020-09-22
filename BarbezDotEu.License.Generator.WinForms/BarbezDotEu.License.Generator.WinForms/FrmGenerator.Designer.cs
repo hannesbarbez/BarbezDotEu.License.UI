@@ -218,6 +218,7 @@
             this.Controls.Add(this.btnGenerateSerials);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "FrmGenerator";
             this.Text = "Barbez.eu License Key Generator";
             this.ResumeLayout(false);
