@@ -4,6 +4,8 @@ Produces license keys you don't mind spelling out loud to another person.
 
 A generator for human-friendly, readable license keys and serial numbers by www.barbez.eu.
 
+[TOC]
+
 ![Generating 30 000 unique keys in a matter of seconds.](https://barbez.eu/wp-content/uploads/2020/10/image-1.png)
 
 Generating 30 000 unique keys in a matter of seconds.
