@@ -6,6 +6,8 @@ A generator for human-friendly, readable license keys and serial numbers by www.
 
 ![Generating 30 000 unique keys in a matter of seconds.](https://barbez.eu/wp-content/uploads/2020/10/image-1.png)
 
+Generating 30 000 unique keys in a matter of seconds.
+
 The Barbez.eu license key generator is ideal for you license key or serial number generation needs, producing strings that are easy to read out for one human to another, yet quick enough to generate a decent amount of them in a short period of time.
 
 ## Features
@@ -64,13 +66,17 @@ A "resulting sum" of 68 takes Y time to render/generate X number of unique keys 
 Maybe not so much. After all, it’s WinForms in 2020.
 
 ![After startup.](https://barbez.eu/wp-content/uploads/2020/09/image-2.png)
+
 After startup.
 
 ![Thinking hard.](https://barbez.eu/wp-content/uploads/2020/09/image.png)
+
 Thinking hard.
 
 ![On-the-fly testing of one of the generated license keys.](https://barbez.eu/wp-content/uploads/2020/09/image-5.png)
+
 On-the-fly testing of one of the generated license keys.
 
 ![Better luck next time.](https://barbez.eu/wp-content/uploads/2020/09/image-6.png)
+
 Better luck next time.
