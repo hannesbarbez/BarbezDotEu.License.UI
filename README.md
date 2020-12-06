@@ -8,7 +8,9 @@ A generator for human-friendly, readable license keys and serial numbers by www.
 
 Generating 30 000 unique keys in a matter of seconds.
 
-The Barbez.eu license key generator is ideal for you license key or serial number generation needs, producing strings that are easy to read out for one human to another, yet quick enough to generate a decent amount of them in a short period of time.
+The Barbez.eu license key generator is ideal for all your license key or serial number generation needs, producing keys or serials that are easy to read out loud one human to another. Yet, the algorithm is quick enough to generate a decent amount of them in a short period of time.
+
+This UI demo project uses the generic https://github.com/hannesbarbez/BarbezDotEu.License for actual generation of keys/serials.
 
 ## Table of Contents
 1. [Features](#features)
