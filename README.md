@@ -4,13 +4,19 @@ Produces license keys you don't mind spelling out loud to another person.
 
 A generator for human-friendly, readable license keys and serial numbers by www.barbez.eu.
 
-[TOC]
-
 ![Generating 30 000 unique keys in a matter of seconds.](https://barbez.eu/wp-content/uploads/2020/10/image-1.png)
 
 Generating 30 000 unique keys in a matter of seconds.
 
 The Barbez.eu license key generator is ideal for you license key or serial number generation needs, producing strings that are easy to read out for one human to another, yet quick enough to generate a decent amount of them in a short period of time.
+
+# Table of Contents
+1. [Features](#features)
+2. [Custom Resulting-Sum Algorithm](#custom-resulting-sum-algorithm)
+3. [Performance](#performance)
+4. [Stats](#stats)
+5. [Graphs](#graphs)
+6. [Eye-Candy](#eye-candy)
 
 ## Features
 - Full multithreading, thanks to .NET Core’s TPL (Task Parallel Library);
@@ -20,7 +26,7 @@ The Barbez.eu license key generator is ideal for you license key or serial numbe
 - Decoupling, e.g. strict separation between UI and logic;
 - Generated license keys that are easy for people to spell out loud.
 
-## Custom “resulting-sum” algorithm
+## Custom Resulting-Sum Algorithm
 
 The generator algorithm was made up in a matter of hours, the whole app (including a recent rewrite) took a couple of days to write.
 
@@ -64,7 +70,7 @@ A "resulting sum" of 68 takes Y time to render/generate X number of unique keys 
 ![Y time needed (ms) to generate X number of keys.](https://barbez.eu/wp-content/uploads/2020/09/image-4.png)
 ![Y time needed (ms) per key when generating X number of keys.](https://barbez.eu/wp-content/uploads/2020/09/image-3.png)
 
-## Eye-candy
+## Eye-Candy
 Maybe not so much. After all, it’s WinForms in 2020.
 
 ![After startup.](https://barbez.eu/wp-content/uploads/2020/09/image-2.png)
