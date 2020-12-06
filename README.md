@@ -10,7 +10,7 @@ Generating 30 000 unique keys in a matter of seconds.
 
 The Barbez.eu license key generator is ideal for you license key or serial number generation needs, producing strings that are easy to read out for one human to another, yet quick enough to generate a decent amount of them in a short period of time.
 
-# Table of Contents
+## Table of Contents
 1. [Features](#features)
 2. [Custom Resulting-Sum Algorithm](#custom-resulting-sum-algorithm)
 3. [Performance](#performance)
