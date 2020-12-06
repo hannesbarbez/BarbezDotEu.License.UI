@@ -38,6 +38,7 @@ The going gets tougher when generating 150 000 unique keys in exactly 4 minutes.
 A "resulting sum" of 68 takes Y time to render/generate X number of unique keys on a Ryzen 1600 based machine.
 
 | Keys (X) | Time (ms, Y) | ms/key (=Y/X) |
+| -------- | ------------ | ------------- |
 | 1 | 12 | 12.00 |
 | 10 | 13 | 1.30 |
 | 100 | 32 | 0.32 |
