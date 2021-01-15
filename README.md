@@ -2,7 +2,7 @@
 
 Produces license keys you don't mind spelling out loud to another person.
 
-A generator for human-friendly, readable license keys and serial numbers by www.barbez.eu.
+A demo generator for human-friendly, readable license keys and serial numbers using https://www.nuget.org/packages/BarbezDotEu.License.Generation and https://www.nuget.org/packages/BarbezDotEu.License.Verification.
 
 ![Generating 30 000 unique keys in a matter of seconds.](https://barbez.eu/wp-content/uploads/2020/10/image-1.png)
 
