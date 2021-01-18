@@ -78,5 +78,10 @@ namespace BarbezDotEu.License.Generator.WinForms
                 }
             }
         }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

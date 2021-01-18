@@ -35,6 +35,7 @@
             this.TbSerial4 = new System.Windows.Forms.TextBox();
             this.TbSerial5 = new System.Windows.Forms.TextBox();
             this.BtnOk = new System.Windows.Forms.Button();
+            this.BtnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnPaste
@@ -97,12 +98,24 @@
             this.BtnOk.UseVisualStyleBackColor = true;
             this.BtnOk.Click += new System.EventHandler(this.BtnOk_Click);
             // 
+            // BtnClose
+            // 
+            this.BtnClose.Location = new System.Drawing.Point(418, 62);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(10, 10);
+            this.BtnClose.TabIndex = 2;
+            this.BtnClose.Text = "Quit";
+            this.BtnClose.UseVisualStyleBackColor = true;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
             // FrmValidator
             // 
             this.AcceptButton = this.BtnOk;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.BtnClose;
             this.ClientSize = new System.Drawing.Size(418, 58);
+            this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.BtnOk);
             this.Controls.Add(this.TbSerial5);
             this.Controls.Add(this.TbSerial4);
@@ -130,5 +143,6 @@
         private System.Windows.Forms.TextBox TbSerial4;
         private System.Windows.Forms.TextBox TbSerial5;
         private System.Windows.Forms.Button BtnOk;
+        private System.Windows.Forms.Button BtnClose;
     }
 }
