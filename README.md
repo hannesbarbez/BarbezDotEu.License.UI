@@ -92,3 +92,6 @@ On-the-fly testing of one of the generated license keys.
 ![Better luck next time.](https://barbez.eu/wp-content/uploads/2020/09/image-6.png)
 
 Better luck next time.
+
+## Author
+www.barbez.eu
