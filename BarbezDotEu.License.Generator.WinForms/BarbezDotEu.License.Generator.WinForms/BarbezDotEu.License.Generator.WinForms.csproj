@@ -15,7 +15,7 @@
 
   <ItemGroup>
     <PackageReference Include="BarbezDotEu.License.Generation" Version="1.2.1" />
-    <PackageReference Include="BarbezDotEu.License.Verification" Version="1.2.0" />
+    <PackageReference Include="BarbezDotEu.License.Verification" Version="1.2.1" />
   </ItemGroup>
 
 </Project>
