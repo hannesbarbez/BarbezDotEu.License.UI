@@ -1,9 +1,13 @@
 ﻿// Copyright (c) Hannes Barbez. All rights reserved.
 // Licensed under the GNU General Public License v3.0
 
-using BarbezDotEu.License.Generation;
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using BarbezDotEu.License.Generation;
 
 namespace BarbezDotEu.License.Generator.WinForms
 {
@@ -18,6 +22,7 @@ namespace BarbezDotEu.License.Generator.WinForms
         private const string DIVIDER = "-";
         private static uint numberOfKeys;
         private static int resultingsum;
+        private Stopwatch stopWatch;
 
         public FrmGenerator()
         {
@@ -36,8 +41,10 @@ namespace BarbezDotEu.License.Generator.WinForms
         {
             this.PrepareUiForNewKeys();
             var keyGenerator = new KeyGenerator(resultingsum, DIVIDER);
-            var generatedKeys = await keyGenerator.GenerateKeys(numberOfKeys, tbDoNotInclude.Lines);
-            this.PrepareUiWithNewKeys(generatedKeys);
+            this.stopWatch = Stopwatch.StartNew();
+            var generatedKeys = await Task.Run(() => keyGenerator.GenerateKeys(numberOfKeys, tbDoNotInclude.Lines));
+            this.stopWatch.Stop();
+            this.ToggleUI(generatedKeys);
         }
 
         private void SetResultingSum()
@@ -52,9 +59,10 @@ namespace BarbezDotEu.License.Generator.WinForms
                 resultingsum = RESULTINGSUM_VOCAB;
         }
 
-        private void PrepareUiWithNewKeys(string[] generatedKeys)
+        private void ToggleUI(IEnumerable<string> generatedKeys)
         {
-            tbSerials.Lines = generatedKeys;
+            tbSerials.Lines = generatedKeys.ToArray();
+            lblStatistics.Text = $"Generated {generatedKeys.Count()} keys in {this.stopWatch.ElapsedMilliseconds} milliseconds.";
             this.ToggleUI();
         }
 
@@ -76,7 +84,10 @@ namespace BarbezDotEu.License.Generator.WinForms
             BtnTest.Enabled = state;
             pbProgress.Visible = !state;
             if (pbProgress.Visible)
+            {
                 tbSerials.Clear();
+                lblStatistics.Text = string.Empty;
+            }
         }
 
         private void ValidateInputAndSetNumberOfKeys()
