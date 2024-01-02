@@ -197,6 +197,7 @@
             // 
             // lblStatistics
             // 
+            lblStatistics.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             lblStatistics.AutoSize = true;
             lblStatistics.Location = new System.Drawing.Point(12, 435);
             lblStatistics.Name = "lblStatistics";
