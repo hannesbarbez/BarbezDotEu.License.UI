@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            var resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGenerator));
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             btnGenerateSerials = new System.Windows.Forms.Button();
@@ -225,6 +226,7 @@
             Controls.Add(btnGenerateSerials);
             Controls.Add(label2);
             Controls.Add(label1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             MinimumSize = new System.Drawing.Size(500, 400);
             Name = "FrmGenerator";
             Text = "Barbez.eu License Key Generator";
