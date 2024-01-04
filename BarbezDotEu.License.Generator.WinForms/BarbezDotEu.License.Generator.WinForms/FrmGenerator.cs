@@ -14,13 +14,13 @@ namespace BarbezDotEu.License.Generator.WinForms
     public partial class FrmGenerator : Form
     {
         // 100000 = Still kind of acceptable before WinForms UI starts to give in.
-        private const uint MAXKEYS = 100000;
+        private const uint MAXKEYS = 10000000;
         private const int RESULTINGSUM_SHUT = 70;
         private const int RESULTINGSUM_SCRONEPRO = 68;
         private const int RESULTINGSUM_EISAT = 66;
         private const int RESULTINGSUM_VOCAB = 64;
         private const string DIVIDER = "-";
-        private static uint numberOfKeys;
+        private static int numberOfKeys;
         private static int resultingsum;
         private Stopwatch stopWatch;
 
@@ -92,8 +92,8 @@ namespace BarbezDotEu.License.Generator.WinForms
 
         private void ValidateInputAndSetNumberOfKeys()
         {
-           var isAcceptableInput = uint.TryParse(tbNumberOfSerials.Text, out uint value);
-            if (isAcceptableInput && value > uint.MinValue && value <= MAXKEYS) //uint.MaxValue)
+           var isAcceptableInput = int.TryParse(tbNumberOfSerials.Text, out int value);
+            if (isAcceptableInput && value > int.MinValue && value <= MAXKEYS) //uint.MaxValue)
             {
                 numberOfKeys = value;
                 btnGenerateSerials.Enabled = true;
