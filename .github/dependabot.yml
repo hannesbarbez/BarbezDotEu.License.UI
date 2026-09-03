@@ -6,6 +6,6 @@
 version: 2
 updates:
   - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/BarbezDotEu.License.Generator.WinForms/" # Location of package manifests
+    directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
